@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/styel.css">
+</head>
+<body>
+  <div class="progress-container">
+    <div class="progress-bar" id="progress-bar">
+      <span class="progress-label" id="progress-label">0%</span>
+    </div>
+  </div>
+  <button class="reset-btn" id="reset-btn">Reset</button>
+  
+  <h2 >FORM INTER VIWE</h2>
+  <div class="box">
+    <label for="fname">Name :</label>
+    
+    <input class=" is-invalid " oninput="prodectinfo()" id="fname" type="text"  >
+  <br>
+  <br>
+    <label for="fage">Age  :</label>
+    
+    <input id="fage" type="number"  >
+    <br>
+    <br>
+    <label for="fplace">Place :</label>
+    
+    <input id="fplace"  type="text"  >
+    <br>
+    <br>
+    <label for="fcollage">Collage :</label>
+    
+    <input id="fcollage"  type="text"  >
+    <br>
+    <br>
+    <button onclick="send()" id="butom" class="d-inline-block">Send</button>
+    <button onclick="displayShowUpdate()" id="updateBtn" class="d-none">Update</button>
+    <br>
+    <br>
+    <input oninput="searchProdact(this.value)"  id="search"  placeholder="Search Name" type="text"  >
+  </div>
+  <table>
+    
+    <thead>
+      <tr>
+<th>Name</th>
+<th>Age</th>
+<th>Place</th>
+<th>Collage</th>
+<th>Update</th>
+<th>Delet</th>
+</tr>
+    </thead>
+   <tbody id="bodyText" style="text-align: center;">
+   
+   </tbody>
+  
+  </table>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: auto;
+   color:rgb(170,58,180);
+   font-family: "Edu VIC WA NT Beginner", cursive;
+
+}
+/* Container styling */
+.progress-container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 20px 0;
+  }
+  
+  /* Progress bar styling */
+  .progress-bar {
+    height: 30px;
+    width: 0;
+    background: linear-gradient(to right, #e74c3c, #2ecc71);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  /* Label inside progress bar */
+  .progress-label {
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  /* Reset button styling */
+  .reset-btn {
+    padding: 10px 20px;
+    margin-left: 30px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .reset-btn:hover {
+    background-color: #c0392b;
+  }
+  
+
+
+h2{
+    text-align: center;
+    margin: 20px;
+}
+.box{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+   
+}
+#fname,#fage,#fplace,#fcollage{
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    width: 80%;
+    margin: auto;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    outline:2px solid  rgb(84, 143, 196) ;
+    padding-left: 2%;
+    font-size: 23px;
+    color: blueviolet;
+}
+#butom,#updateBtn{
+    width: 130px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, rgba(170,58,180,1) 0%, rgb(109, 189, 137) 50%, rgba(69,242,252,1) 100%);
+    color: white;
+    cursor: pointer;
+    border: 1px solid blueviolet;
+    transition: 0.3s;
+    font-family: "Edu VIC WA NT Beginner", cursive;
+}
+#butom:hover,#updateBtn:hover{
+    background: transparent;
+    color: blueviolet;
+    transform: scale(1.1);
+}
+#butomtable
+{  background: linear-gradient(90deg, rgba(170,58,180,1) 0%, rgb(109, 189, 137) 50%, rgba(69,242,252,1) 100%);
+    margin-bottom: 10px;
+}
+#butomtable:hover{
+    background: transparent;
+    color: blueviolet;
+    border: 1px solid blueviolet;
+}
+#search{
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    width: 60%;
+    height: 40px;
+    padding-left: 5%;
+    margin: 40px;
+    border: none;
+    outline: 1px solid rgba(145, 37, 172, 0.123);
+    background: rgba(190, 186, 194, 0.253);
+    border-radius: 10px;
+    font-size: 20px;
+    color: blueviolet;
+}
+table {
+    width: 80%;
+    margin: auto;
+    border: 1px solid;
+    font-size: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+#butomtable
+{
+    display: inline-block;
+    width: 90px;
+    height: 25px;
+    background-color: white;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 400px) {
+    h2{
+        font-size: 18px;
+    }
+    #fname,#fage,#fplace,#fcollage{
+        width: 70%;
+        height: 40px;
+        font-size: 18px;
+    }
+    #butom{
+        width: 80px;
+        height: 25px;
+        font-size: 16px;
+        border-radius: 15px;
+        margin-left: 15%;
+       
+    }
+    #search{
+        width: 90%;
+        height: 30px;
+        margin:20px;
+        font-size: 14px;
+        
+    }
+    table {
+        width: 80%;
+        font-size: 14px;
+        display: flex;
+        justify-content: space-evenly;
+        margin: auto;
+        margin-bottom: 30px;
+      
+    }
+    table th{
+        display: block;
+       padding-top: 20px;
+    }
+    td{
+      display: block;  
+     
+    }
+    #butomtable
+    {
+       
+        width: 40px;
+        height: 20px;
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+  }
+
+  
+
